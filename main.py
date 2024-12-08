@@ -20,7 +20,7 @@ class UserState(StatesGroup):  # Создаем класс состояний д
 # Функция для установки возраста
 @dp.message_handler(commands=['start'])  # Обработчик на команду /start
 async def start(message: types.Message):  # Асинхронная функция для обработки команды
-    await message.answer("Нажмите 'Calories' для начала.")  # Ответ пользователю с инструкцией
+    await message.answer("'Привет, я бот помогающий твоему здоровью. Введи calories' ")  # Ответ пользователю с инструкцией
 
 
 @dp.message_handler(lambda message: message.text.lower() == 'calories')  # Обработчик на текст 'calories'
